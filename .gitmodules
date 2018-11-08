@@ -1,4 +1,4 @@
 [submodule "Plugins/DlgSystem"]
 	path = Plugins/DlgSystem
 	url = git@gitlab.com:NotYetGames/DlgSystem.git
-	branch = 4.20
+	branch = 4.21
