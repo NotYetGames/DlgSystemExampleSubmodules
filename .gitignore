@@ -90,6 +90,7 @@ Config/QuickSave_0.txt
 *.autosave
 LocalDerivedDataCache/
 Packaged/
+Tools
 
 # All
 *_BuiltData.uasset
