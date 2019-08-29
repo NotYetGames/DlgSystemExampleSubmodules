@@ -64,6 +64,8 @@ Content/StarterContent/
 Content/ExampleContent/
 Content/TempTree/
 Tools/
+_Resharper.Caches/
+DerivedDataCacheLocal/
 
 # Don't ignore icon files in Build
 !Build/**/*.ico
