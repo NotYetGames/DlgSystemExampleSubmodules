@@ -38,7 +38,25 @@ jhjhgjgh"
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
 		GenericData ""
-		EnterConditions { {  Strength "EDlgConditionStrength::Strong" ConditionType "EDlgConditionType::WasNodeVisited" ParticipantName "None" CallbackName "None" Operation "EDlgOperation::Equal" CompareType "EDlgCompare::ToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 0 FloatValue 0.0 NameValue "None" bBoolValue False bLongTermMemory True } }
+		EnterConditions
+		{
+			{
+				Strength "EDlgConditionStrength::Strong"
+				ConditionType "EDlgConditionType::WasNodeVisited"
+				ParticipantName "None"
+				CallbackName "None"
+				Operation "EDlgOperation::Equal"
+				CompareType "EDlgCompare::ToConst"
+				OtherParticipantName "None"
+				OtherVariableName "None"
+				IntValue 0
+				FloatValue 0.0
+				NameValue "None"
+				bBoolValue False
+				bLongTermMemory True
+				CustomCondition ""
+			}
+		}
 		Children { {  TargetIndex 2 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "" } }
 	}
 	// 1
@@ -92,6 +110,20 @@ jhjhgjgh"
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
 		GenericData ""
+		EnterEvents
+		{
+			{
+				ParticipantName "MrCube"
+				EventType "EDlgEventType::Custom"
+				EventName "None"
+				IntValue 0
+				FloatValue 0.0
+				NameValue "None"
+				bDelta False
+				bValue False
+				EventCustom_C CustomEvent {  }
+			}
+		}
 		Children { {  TargetIndex 5 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Red" } }
 	}
 	// 4
@@ -113,7 +145,25 @@ jhjhgjgh"
 				SpeakerState "None"
 				bIncludeInAllOptionListIfUnsatisfied True
 				Text ""
-				Conditions { {  Strength "EDlgConditionStrength::Strong" ConditionType "EDlgConditionType::IntCall" ParticipantName "MyCharacterName" CallbackName "ColorChangeRequest" Operation "EDlgOperation::LessOrEqual" CompareType "EDlgCompare::ToConst" OtherParticipantName "None" OtherVariableName "None" IntValue 3 FloatValue 0.0 NameValue "None" bBoolValue True bLongTermMemory True } }
+				Conditions
+				{
+					{
+						Strength "EDlgConditionStrength::Strong"
+						ConditionType "EDlgConditionType::IntCall"
+						ParticipantName "MyCharacterName"
+						CallbackName "ColorChangeRequest"
+						Operation "EDlgOperation::LessOrEqual"
+						CompareType "EDlgCompare::ToConst"
+						OtherParticipantName "None"
+						OtherVariableName "None"
+						IntValue 3
+						FloatValue 0.0
+						NameValue "None"
+						bBoolValue True
+						bLongTermMemory True
+						CustomCondition ""
+					}
+				}
 			}
 			{  TargetIndex 7 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "" }
 		}
@@ -130,7 +180,20 @@ jhjhgjgh"
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
 		GenericData ""
-		EnterEvents { {  ParticipantName "MyCharacterName" EventType "EDlgEventType::ModifyInt" EventName "ColorChangeRequest" IntValue 1 FloatValue 0.0 NameValue "None" bDelta True bValue False } }
+		EnterEvents
+		{
+			{
+				ParticipantName "MyCharacterName"
+				EventType "EDlgEventType::ModifyInt"
+				EventName "ColorChangeRequest"
+				IntValue 1
+				FloatValue 0.0
+				NameValue "None"
+				bDelta True
+				bValue False
+				CustomEvent ""
+			}
+		}
 		Children
 		{
 			{  TargetIndex 8 SpeakerState "Angry" bIncludeInAllOptionListIfUnsatisfied True Text "Red" }
@@ -158,93 +221,65 @@ Just leave me alone!"
 	{
 		OwnerName "MrCube"
 		bCheckChildrenOnEvaluation False
-		EnterEvents { {  ParticipantName "MrCube" EventType "EDlgEventType::Event" EventName "ColorToRed" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False } }
+		EnterEvents
+		{
+			{
+				ParticipantName "MrCube"
+				EventType "EDlgEventType::Event"
+				EventName "ColorToRed"
+				IntValue 0
+				FloatValue 0.0
+				NameValue "None"
+				bDelta False
+				bValue False
+				CustomEvent ""
+			}
+		}
 	}
 	// 9
 	Node_End 
 	{
 		OwnerName "MrCube"
 		bCheckChildrenOnEvaluation False
-		EnterEvents { {  ParticipantName "MrCube" EventType "EDlgEventType::Event" EventName "ColorToGreen" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False } }
+		EnterEvents
+		{
+			{
+				ParticipantName "MrCube"
+				EventType "EDlgEventType::Event"
+				EventName "ColorToGreen"
+				IntValue 0
+				FloatValue 0.0
+				NameValue "None"
+				bDelta False
+				bValue False
+				CustomEvent ""
+			}
+		}
 	}
 	// 10
 	Node_End 
 	{
 		OwnerName "MrCube"
 		bCheckChildrenOnEvaluation False
-		EnterEvents { {  ParticipantName "None" EventType "EDlgEventType::Event" EventName "ColorToBlue" IntValue 0 FloatValue 0.0 NameValue "None" bDelta False bValue False } }
+		EnterEvents
+		{
+			{
+				ParticipantName "None"
+				EventType "EDlgEventType::Event"
+				EventName "ColorToBlue"
+				IntValue 0
+				FloatValue 0.0
+				NameValue "None"
+				bDelta False
+				bValue False
+				CustomEvent ""
+			}
+		}
 	}
 	// 11
 	Node_End 
 	{
 		OwnerName "MrCube"
 		bCheckChildrenOnEvaluation False
-	}
-	// 12
-	Node_SpeechSequence 
-	{
-		OwnerName "MrCube"
-		bCheckChildrenOnEvaluation False
-		SpeechSequence
-		{
-			{
-				Speaker "None"
-				Text "test sequence 1"
-				EdgeText "test sequence edge 1"
-				SpeakerState "None"
-				NodeData ""
-				VoiceSoundWave ""
-				VoiceDialogueWave ""
-				GenericData ""
-			}
-			{
-				Speaker "None"
-				Text ""
-				EdgeText "Next Remapped"
-				SpeakerState "None"
-				NodeData ""
-				VoiceSoundWave ""
-				VoiceDialogueWave ""
-				GenericData ""
-			}
-			{
-				Speaker "None"
-				Text ""
-				EdgeText "fdsdfsfds"
-				SpeakerState "None"
-				NodeData ""
-				VoiceSoundWave ""
-				VoiceDialogueWave ""
-				GenericData ""
-			}
-			{
-				Speaker "None"
-				Text "test sequence 3"
-				EdgeText "test sequence edge 3"
-				SpeakerState "None"
-				NodeData ""
-				VoiceSoundWave ""
-				VoiceDialogueWave ""
-				GenericData ""
-			}
-			{
-				Speaker "None"
-				Text ""
-				EdgeText "Next Remapped"
-				SpeakerState "None"
-				NodeData ""
-				VoiceSoundWave ""
-				VoiceDialogueWave ""
-				GenericData ""
-			}
-		}
-		InnerEdges
-		{
-			{  TargetIndex -1 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "test sequence edge 1" }
-			{  TargetIndex -1 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Next" }
-			{  TargetIndex -1 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "fdsdfsfds" }
-			{  TargetIndex -1 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "test sequence edge 3" }
-			{  TargetIndex -1 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Next" }
-		}
 	}
 }

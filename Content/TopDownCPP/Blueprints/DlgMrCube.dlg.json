@@ -75,7 +75,8 @@
 					"FloatValue": 0,
 					"NameValue": "None",
 					"bBoolValue": false,
-					"bLongTermMemory": true
+					"bLongTermMemory": true,
+					"CustomCondition": null
 				}
 			],
 			"EnterEvents": [],
@@ -207,7 +208,22 @@
 			"OwnerName": "MyCharacterName",
 			"bCheckChildrenOnEvaluation": false,
 			"EnterConditions": [],
-			"EnterEvents": [],
+			"EnterEvents": [
+				{
+					"ParticipantName": "MrCube",
+					"EventType": "EDlgEventType::Custom",
+					"EventName": "None",
+					"IntValue": 0,
+					"FloatValue": 0,
+					"NameValue": "None",
+					"bDelta": false,
+					"bValue": false,
+					"CustomEvent":
+					{
+						"__type__": "EventCustom_C"
+					}
+				}
+			],
 			"Children": [
 				{
 					"TargetIndex": 5,
@@ -253,7 +269,8 @@
 							"FloatValue": 0,
 							"NameValue": "None",
 							"bBoolValue": true,
-							"bLongTermMemory": true
+							"bLongTermMemory": true,
+							"CustomCondition": null
 						}
 					],
 					"SpeakerState": "None",
@@ -294,7 +311,8 @@
 					"FloatValue": 0,
 					"NameValue": "None",
 					"bDelta": true,
-					"bValue": false
+					"bValue": false,
+					"CustomEvent": null
 				}
 			],
 			"Children": [
@@ -365,7 +383,8 @@
 					"FloatValue": 0,
 					"NameValue": "None",
 					"bDelta": false,
-					"bValue": false
+					"bValue": false,
+					"CustomEvent": null
 				}
 			],
 			"Children": []
@@ -385,7 +404,8 @@
 					"FloatValue": 0,
 					"NameValue": "None",
 					"bDelta": false,
-					"bValue": false
+					"bValue": false,
+					"CustomEvent": null
 				}
 			],
 			"Children": []
@@ -405,7 +425,8 @@
 					"FloatValue": 0,
 					"NameValue": "None",
 					"bDelta": false,
-					"bValue": false
+					"bValue": false,
+					"CustomEvent": null
 				}
 			],
 			"Children": []
@@ -413,109 +434,6 @@
 		{
 			"__index__": 11,
 			"__type__": "DlgNode_End",
-			"OwnerName": "MrCube",
-			"bCheckChildrenOnEvaluation": false,
-			"EnterConditions": [],
-			"EnterEvents": [],
-			"Children": []
-		},
-		{
-			"__index__": 12,
-			"__type__": "DlgNode_SpeechSequence",
-			"SpeechSequence": [
-				{
-					"Speaker": "None",
-					"Text": "test sequence 1",
-					"EdgeText": "test sequence edge 1",
-					"SpeakerState": "None",
-					"NodeData": null,
-					"VoiceSoundWave": "",
-					"VoiceDialogueWave": "",
-					"GenericData": ""
-				},
-				{
-					"Speaker": "None",
-					"Text": "",
-					"EdgeText": "Next Remapped",
-					"SpeakerState": "None",
-					"NodeData": null,
-					"VoiceSoundWave": "",
-					"VoiceDialogueWave": "",
-					"GenericData": ""
-				},
-				{
-					"Speaker": "None",
-					"Text": "",
-					"EdgeText": "fdsdfsfds",
-					"SpeakerState": "None",
-					"NodeData": null,
-					"VoiceSoundWave": "",
-					"VoiceDialogueWave": "",
-					"GenericData": ""
-				},
-				{
-					"Speaker": "None",
-					"Text": "test sequence 3",
-					"EdgeText": "test sequence edge 3",
-					"SpeakerState": "None",
-					"NodeData": null,
-					"VoiceSoundWave": "",
-					"VoiceDialogueWave": "",
-					"GenericData": ""
-				},
-				{
-					"Speaker": "None",
-					"Text": "",
-					"EdgeText": "Next Remapped",
-					"SpeakerState": "None",
-					"NodeData": null,
-					"VoiceSoundWave": "",
-					"VoiceDialogueWave": "",
-					"GenericData": ""
-				}
-			],
-			"InnerEdges": [
-				{
-					"TargetIndex": -1,
-					"Conditions": [],
-					"SpeakerState": "None",
-					"bIncludeInAllOptionListIfUnsatisfied": true,
-					"Text": "test sequence edge 1",
-					"TextArguments": []
-				},
-				{
-					"TargetIndex": -1,
-					"Conditions": [],
-					"SpeakerState": "None",
-					"bIncludeInAllOptionListIfUnsatisfied": true,
-					"Text": "Next",
-					"TextArguments": []
-				},
-				{
-					"TargetIndex": -1,
-					"Conditions": [],
-					"SpeakerState": "None",
-					"bIncludeInAllOptionListIfUnsatisfied": true,
-					"Text": "fdsdfsfds",
-					"TextArguments": []
-				},
-				{
-					"TargetIndex": -1,
-					"Conditions": [],
-					"SpeakerState": "None",
-					"bIncludeInAllOptionListIfUnsatisfied": true,
-					"Text": "test sequence edge 3",
-					"TextArguments": []
-				},
-				{
-					"TargetIndex": -1,
-					"Conditions": [],
-					"SpeakerState": "None",
-					"bIncludeInAllOptionListIfUnsatisfied": true,
-					"Text": "Next",
-					"TextArguments": []
-				}
-			],
 			"OwnerName": "MrCube",
 			"bCheckChildrenOnEvaluation": false,
 			"EnterConditions": [],
