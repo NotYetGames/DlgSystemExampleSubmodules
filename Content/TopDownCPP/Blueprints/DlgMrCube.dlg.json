@@ -130,12 +130,74 @@
 			"GenericData": "",
 			"OwnerName": "None",
 			"bCheckChildrenOnEvaluation": false,
-			"EnterConditions": [],
+			"EnterConditions": [
+				{
+					"Strength": "EDlgConditionStrength::Strong",
+					"ConditionType": "EDlgConditionType::Custom",
+					"ParticipantName": "MrCube",
+					"CallbackName": "None",
+					"Operation": "EDlgOperation::Equal",
+					"CompareType": "EDlgCompare::ToConst",
+					"OtherParticipantName": "None",
+					"OtherVariableName": "None",
+					"IntValue": 0,
+					"FloatValue": 0,
+					"NameValue": "None",
+					"bBoolValue": true,
+					"bLongTermMemory": true,
+					"CustomCondition":
+					{
+						"__type__": "EdgeCondition_C",
+						"From": "FromNode"
+					}
+				}
+			],
 			"EnterEvents": [],
 			"Children": [
 				{
 					"TargetIndex": 3,
-					"Conditions": [],
+					"Conditions": [
+						{
+							"Strength": "EDlgConditionStrength::Strong",
+							"ConditionType": "EDlgConditionType::Custom",
+							"ParticipantName": "MrCube",
+							"CallbackName": "None",
+							"Operation": "EDlgOperation::Equal",
+							"CompareType": "EDlgCompare::ToConst",
+							"OtherParticipantName": "None",
+							"OtherVariableName": "None",
+							"IntValue": 0,
+							"FloatValue": 0,
+							"NameValue": "None",
+							"bBoolValue": true,
+							"bLongTermMemory": true,
+							"CustomCondition":
+							{
+								"__type__": "EdgeCondition_C",
+								"From": "first"
+							}
+						},
+						{
+							"Strength": "EDlgConditionStrength::Strong",
+							"ConditionType": "EDlgConditionType::Custom",
+							"ParticipantName": "MrCube",
+							"CallbackName": "None",
+							"Operation": "EDlgOperation::Equal",
+							"CompareType": "EDlgCompare::ToConst",
+							"OtherParticipantName": "None",
+							"OtherVariableName": "None",
+							"IntValue": 0,
+							"FloatValue": 0,
+							"NameValue": "None",
+							"bBoolValue": true,
+							"bLongTermMemory": true,
+							"CustomCondition":
+							{
+								"__type__": "EdgeCondition_C",
+								"From": "second"
+							}
+						}
+					],
 					"SpeakerState": "None",
 					"bIncludeInAllOptionListIfUnsatisfied": true,
 					"Text": "Ask him to change his color",
@@ -227,7 +289,28 @@
 			"Children": [
 				{
 					"TargetIndex": 5,
-					"Conditions": [],
+					"Conditions": [
+						{
+							"Strength": "EDlgConditionStrength::Strong",
+							"ConditionType": "EDlgConditionType::Custom",
+							"ParticipantName": "None",
+							"CallbackName": "None",
+							"Operation": "EDlgOperation::Equal",
+							"CompareType": "EDlgCompare::ToConst",
+							"OtherParticipantName": "None",
+							"OtherVariableName": "None",
+							"IntValue": 0,
+							"FloatValue": 0,
+							"NameValue": "None",
+							"bBoolValue": true,
+							"bLongTermMemory": true,
+							"CustomCondition":
+							{
+								"__type__": "EdgeCondition_C",
+								"From": "test"
+							}
+						}
+					],
 					"SpeakerState": "None",
 					"bIncludeInAllOptionListIfUnsatisfied": true,
 					"Text": "Red",

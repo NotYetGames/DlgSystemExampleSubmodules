@@ -85,9 +85,68 @@ jhjhgjgh"
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
 		GenericData ""
+		EnterConditions
+		{
+			{
+				Strength "EDlgConditionStrength::Strong"
+				ConditionType "EDlgConditionType::Custom"
+				ParticipantName "MrCube"
+				CallbackName "None"
+				Operation "EDlgOperation::Equal"
+				CompareType "EDlgCompare::ToConst"
+				OtherParticipantName "None"
+				OtherVariableName "None"
+				IntValue 0
+				FloatValue 0.0
+				NameValue "None"
+				bBoolValue True
+				bLongTermMemory True
+				EdgeCondition_C CustomCondition {  From "FromNode" }
+			}
+		}
 		Children
 		{
-			{  TargetIndex 3 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Ask him to change his color" }
+			{
+				TargetIndex 3
+				SpeakerState "None"
+				bIncludeInAllOptionListIfUnsatisfied True
+				Text "Ask him to change his color"
+				Conditions
+				{
+					{
+						Strength "EDlgConditionStrength::Strong"
+						ConditionType "EDlgConditionType::Custom"
+						ParticipantName "MrCube"
+						CallbackName "None"
+						Operation "EDlgOperation::Equal"
+						CompareType "EDlgCompare::ToConst"
+						OtherParticipantName "None"
+						OtherVariableName "None"
+						IntValue 0
+						FloatValue 0.0
+						NameValue "None"
+						bBoolValue True
+						bLongTermMemory True
+						EdgeCondition_C CustomCondition {  From "first" }
+					}
+					{
+						Strength "EDlgConditionStrength::Strong"
+						ConditionType "EDlgConditionType::Custom"
+						ParticipantName "MrCube"
+						CallbackName "None"
+						Operation "EDlgOperation::Equal"
+						CompareType "EDlgCompare::ToConst"
+						OtherParticipantName "None"
+						OtherVariableName "None"
+						IntValue 0
+						FloatValue 0.0
+						NameValue "None"
+						bBoolValue True
+						bLongTermMemory True
+						EdgeCondition_C CustomCondition {  From "second" }
+					}
+				}
+			}
 			{  TargetIndex 4 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Leave" }
 		}
 	}
@@ -124,7 +183,34 @@ jhjhgjgh"
 				EventCustom_C CustomEvent {  }
 			}
 		}
-		Children { {  TargetIndex 5 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Red" } }
+		Children
+		{
+			{
+				TargetIndex 5
+				SpeakerState "None"
+				bIncludeInAllOptionListIfUnsatisfied True
+				Text "Red"
+				Conditions
+				{
+					{
+						Strength "EDlgConditionStrength::Strong"
+						ConditionType "EDlgConditionType::Custom"
+						ParticipantName "None"
+						CallbackName "None"
+						Operation "EDlgOperation::Equal"
+						CompareType "EDlgCompare::ToConst"
+						OtherParticipantName "None"
+						OtherVariableName "None"
+						IntValue 0
+						FloatValue 0.0
+						NameValue "None"
+						bBoolValue True
+						bLongTermMemory True
+						EdgeCondition_C CustomCondition {  From "test" }
+					}
+				}
+			}
+		}
 	}
 	// 4
 	Node_End 
