@@ -269,7 +269,24 @@
 			"GenericData": "",
 			"OwnerName": "MyCharacterName",
 			"bCheckChildrenOnEvaluation": false,
-			"EnterConditions": [],
+			"EnterConditions": [
+				{
+					"Strength": "EDlgConditionStrength::Strong",
+					"ConditionType": "EDlgConditionType::ClassFloatVariable",
+					"ParticipantName": "MrCube",
+					"CallbackName": "Float",
+					"Operation": "EDlgOperation::Greater",
+					"CompareType": "EDlgCompare::ToConst",
+					"OtherParticipantName": "None",
+					"OtherVariableName": "None",
+					"IntValue": 0,
+					"FloatValue": 1,
+					"NameValue": "None",
+					"bBoolValue": true,
+					"bLongTermMemory": true,
+					"CustomCondition": null
+				}
+			],
 			"EnterEvents": [
 				{
 					"ParticipantName": "MrCube",
@@ -313,7 +330,7 @@
 					],
 					"SpeakerState": "None",
 					"bIncludeInAllOptionListIfUnsatisfied": true,
-					"Text": "Red",
+					"Text": "Next",
 					"TextArguments": []
 				}
 			]
@@ -448,6 +465,14 @@
 					"bIncludeInAllOptionListIfUnsatisfied": true,
 					"Text": "Finish",
 					"TextArguments": []
+				},
+				{
+					"TargetIndex": 12,
+					"Conditions": [],
+					"SpeakerState": "None",
+					"bIncludeInAllOptionListIfUnsatisfied": true,
+					"Text": "",
+					"TextArguments": []
 				}
 			]
 		},
@@ -517,6 +542,23 @@
 		{
 			"__index__": 11,
 			"__type__": "DlgNode_End",
+			"OwnerName": "MrCube",
+			"bCheckChildrenOnEvaluation": false,
+			"EnterConditions": [],
+			"EnterEvents": [],
+			"Children": []
+		},
+		{
+			"__index__": 12,
+			"__type__": "DlgNode_Speech",
+			"bIsVirtualParent": false,
+			"Text": "",
+			"TextArguments": [],
+			"SpeakerState": "None",
+			"NodeData": null,
+			"VoiceSoundWave": "",
+			"VoiceDialogueWave": "",
+			"GenericData": "",
 			"OwnerName": "MrCube",
 			"bCheckChildrenOnEvaluation": false,
 			"EnterConditions": [],

@@ -169,6 +169,25 @@ jhjhgjgh"
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
 		GenericData ""
+		EnterConditions
+		{
+			{
+				Strength "EDlgConditionStrength::Strong"
+				ConditionType "EDlgConditionType::ClassFloatVariable"
+				ParticipantName "MrCube"
+				CallbackName "Float"
+				Operation "EDlgOperation::Greater"
+				CompareType "EDlgCompare::ToConst"
+				OtherParticipantName "None"
+				OtherVariableName "None"
+				IntValue 0
+				FloatValue 1.0
+				NameValue "None"
+				bBoolValue True
+				bLongTermMemory True
+				CustomCondition ""
+			}
+		}
 		EnterEvents
 		{
 			{
@@ -189,7 +208,7 @@ jhjhgjgh"
 				TargetIndex 5
 				SpeakerState "None"
 				bIncludeInAllOptionListIfUnsatisfied True
-				Text "Red"
+				Text "Next"
 				Conditions
 				{
 					{
@@ -300,7 +319,11 @@ Just leave me alone!"
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
 		GenericData ""
-		Children { {  TargetIndex 11 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Finish" } }
+		Children
+		{
+			{  TargetIndex 11 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Finish" }
+			{  TargetIndex 12 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "" }
+		}
 	}
 	// 8
 	Node_End 
@@ -367,5 +390,18 @@ Just leave me alone!"
 	{
 		OwnerName "MrCube"
 		bCheckChildrenOnEvaluation False
+	}
+	// 12
+	Node_Speech 
+	{
+		bIsVirtualParent False
+		Text ""
+		SpeakerState "None"
+		OwnerName "MrCube"
+		bCheckChildrenOnEvaluation False
+		NodeData ""
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		GenericData ""
 	}
 }
