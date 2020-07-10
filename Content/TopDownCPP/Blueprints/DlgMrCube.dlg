@@ -101,7 +101,7 @@ jhjhgjgh"
 				NameValue "None"
 				bBoolValue True
 				bLongTermMemory True
-				EdgeCondition_C CustomCondition {  From "FromNode" }
+				ConditionCustom_C CustomCondition {  From "FromNode" }
 			}
 		}
 		Children
@@ -127,7 +127,7 @@ jhjhgjgh"
 						NameValue "None"
 						bBoolValue True
 						bLongTermMemory True
-						EdgeCondition_C CustomCondition {  From "first" }
+						ConditionCustom_C CustomCondition {  From "first" }
 					}
 					{
 						Strength "EDlgConditionStrength::Strong"
@@ -143,7 +143,7 @@ jhjhgjgh"
 						NameValue "None"
 						bBoolValue True
 						bLongTermMemory True
-						EdgeCondition_C CustomCondition {  From "second" }
+						ConditionCustom_C CustomCondition {  From "second" }
 					}
 				}
 			}
@@ -154,7 +154,7 @@ jhjhgjgh"
 	Node_Speech 
 	{
 		bIsVirtualParent False
-		Text "Could you change your color?"
+		Text "Could you change your color? {test}"
 		SpeakerState "None"
 		OwnerName "MyCharacterName"
 		bCheckChildrenOnEvaluation False
@@ -169,6 +169,16 @@ jhjhgjgh"
 		VoiceSoundWave ""
 		VoiceDialogueWave ""
 		GenericData ""
+		TextArguments
+		{
+			{
+				DisplayString "test"
+				Type "EDlgTextArgumentType::Custom"
+				ParticipantName "None"
+				VariableName "None"
+				TextArgumentCustom_C CustomTextArgument {  UserGivenParam "I am Cool" }
+			}
+		}
 		EnterConditions
 		{
 			{
@@ -201,35 +211,19 @@ jhjhgjgh"
 				bValue False
 				EventCustom_C CustomEvent {  }
 			}
-		}
-		Children
-		{
 			{
-				TargetIndex 5
-				SpeakerState "None"
-				bIncludeInAllOptionListIfUnsatisfied True
-				Text "Next"
-				Conditions
-				{
-					{
-						Strength "EDlgConditionStrength::Strong"
-						ConditionType "EDlgConditionType::Custom"
-						ParticipantName "None"
-						CallbackName "None"
-						Operation "EDlgOperation::Equal"
-						CompareType "EDlgCompare::ToConst"
-						OtherParticipantName "None"
-						OtherVariableName "None"
-						IntValue 0
-						FloatValue 0.0
-						NameValue "None"
-						bBoolValue True
-						bLongTermMemory True
-						EdgeCondition_C CustomCondition {  From "test" }
-					}
-				}
+				ParticipantName "None"
+				EventType "EDlgEventType::ModifyClassBoolVariable"
+				EventName "None"
+				IntValue 0
+				FloatValue 0.0
+				NameValue "None"
+				bDelta False
+				bValue False
+				CustomEvent ""
 			}
 		}
+		Children { {  TargetIndex 5 SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True Text "Next" } }
 	}
 	// 4
 	Node_End 
