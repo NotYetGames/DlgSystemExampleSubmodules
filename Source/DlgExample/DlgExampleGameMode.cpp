@@ -39,7 +39,7 @@ void ADlgExampleGameMode::StartPlay()
 	PrimaryActorTick.bCanEverTick = true;
 
 	// Register plugin console commands
-	// UDlgManager::SetPersistentWorldContextObject(this);
+	// UDlgManager::SetDialoguePersistentWorldContextObject(this);
 	// UDlgManager::RegisterDialogueConsoleCommands();
 
 	// register own commands probably

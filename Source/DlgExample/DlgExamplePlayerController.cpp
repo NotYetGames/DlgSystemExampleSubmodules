@@ -24,10 +24,10 @@ ADlgExamplePlayerController::ADlgExamplePlayerController()
 
 // void ADlgExamplePlayerController::SelectDialogueOption(int32 Index)
 // {
-// 	if (ActiveContext == nullptr || Index < 0 || Index >= ActiveContext->GetOptionNum())
+// 	if (ActiveContext == nullptr || Index < 0 || Index >= ActiveContext->GetOptionsNum())
 // 		return;
 
-// 	if (!ActiveContext->ChooseChild(Index))
+// 	if (!ActiveContext->ChooseOption(Index))
 // 		ActiveContext = nullptr;
 // }
 

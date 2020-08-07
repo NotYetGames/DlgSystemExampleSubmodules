@@ -1,9 +1,9 @@
 {
 	"__type__": "DlgDialogue",
-	"DlgVersion": 8,
-	"DlgName": "DlgMrCube",
-	"DlgGuid": "CA66C1494A5208F97F7B908C24F9A8A6",
-	"DlgParticipantClasses": [
+	"Version": 10,
+	"Name": "DlgMrCube",
+	"GUID": "CA66C1494A5208F97F7B908C24F9A8A6",
+	"ParticipantsClasses": [
 		{
 			"ParticipantName": "MrCube",
 			"ParticipantClass": "/Game/TopDownCPP/Blueprints/MrCube.MrCube_C"
@@ -17,6 +17,7 @@
 	{
 		"__type__": "DlgNode_Speech",
 		"bIsVirtualParent": false,
+		"bVirtualParentFireDirectChildEnterEvents": true,
 		"Text": "",
 		"TextArguments": [],
 		"SpeakerState": "None",
@@ -28,6 +29,7 @@
 		"bCheckChildrenOnEvaluation": false,
 		"EnterConditions": [],
 		"EnterEvents": [],
+		"NodeGUID": "D0DF8C394AE140F30D26ADAFD5EC4B23",
 		"Children": [
 			{
 				"TargetIndex": 0,
@@ -52,6 +54,7 @@
 			"__index__": 0,
 			"__type__": "DlgNode_Speech",
 			"bIsVirtualParent": true,
+			"bVirtualParentFireDirectChildEnterEvents": true,
 			"Text": "I am Mr. Cube! What can I do for you?kkjhhjklkjljk\r\njhjhgjgh",
 			"TextArguments": [],
 			"SpeakerState": "None",
@@ -76,10 +79,12 @@
 					"NameValue": "None",
 					"bBoolValue": false,
 					"bLongTermMemory": true,
+					"GUID": "28422C254448BF2DF6676C89AD892D76",
 					"CustomCondition": null
 				}
 			],
 			"EnterEvents": [],
+			"NodeGUID": "28422C254448BF2DF6676C89AD892D76",
 			"Children": [
 				{
 					"TargetIndex": 2,
@@ -95,6 +100,7 @@
 			"__index__": 1,
 			"__type__": "DlgNode_Speech",
 			"bIsVirtualParent": true,
+			"bVirtualParentFireDirectChildEnterEvents": true,
 			"Text": "Good to see you again!",
 			"TextArguments": [],
 			"SpeakerState": "None",
@@ -104,8 +110,27 @@
 			"GenericData": "",
 			"OwnerName": "MrCube",
 			"bCheckChildrenOnEvaluation": false,
-			"EnterConditions": [],
+			"EnterConditions": [
+				{
+					"Strength": "EDlgConditionStrength::Strong",
+					"ConditionType": "EDlgConditionType::HasSatisfiedChild",
+					"ParticipantName": "None",
+					"CallbackName": "None",
+					"Operation": "EDlgOperation::Equal",
+					"CompareType": "EDlgCompare::ToConst",
+					"OtherParticipantName": "None",
+					"OtherVariableName": "None",
+					"IntValue": 3,
+					"FloatValue": 0,
+					"NameValue": "None",
+					"bBoolValue": true,
+					"bLongTermMemory": true,
+					"GUID": "35B4256E4DAA4A9B167A89B4A09E304A",
+					"CustomCondition": null
+				}
+			],
 			"EnterEvents": [],
+			"NodeGUID": "2F4D3ED343B4C6FDA24A44A8CE1DC1A9",
 			"Children": [
 				{
 					"TargetIndex": 2,
@@ -121,6 +146,7 @@
 			"__index__": 2,
 			"__type__": "DlgNode_Speech",
 			"bIsVirtualParent": false,
+			"bVirtualParentFireDirectChildEnterEvents": true,
 			"Text": "",
 			"TextArguments": [],
 			"SpeakerState": "None",
@@ -145,6 +171,7 @@
 					"NameValue": "None",
 					"bBoolValue": true,
 					"bLongTermMemory": true,
+					"GUID": "00000000000000000000000000000000",
 					"CustomCondition":
 					{
 						"__type__": "ConditionCustom_C",
@@ -153,6 +180,7 @@
 				}
 			],
 			"EnterEvents": [],
+			"NodeGUID": "408AD298458025C5D54C91993652AE68",
 			"Children": [
 				{
 					"TargetIndex": 3,
@@ -171,6 +199,7 @@
 							"NameValue": "None",
 							"bBoolValue": true,
 							"bLongTermMemory": true,
+							"GUID": "00000000000000000000000000000000",
 							"CustomCondition":
 							{
 								"__type__": "ConditionCustom_C",
@@ -191,6 +220,7 @@
 							"NameValue": "None",
 							"bBoolValue": true,
 							"bLongTermMemory": true,
+							"GUID": "00000000000000000000000000000000",
 							"CustomCondition":
 							{
 								"__type__": "ConditionCustom_C",
@@ -217,6 +247,7 @@
 			"__index__": 3,
 			"__type__": "DlgNode_Speech",
 			"bIsVirtualParent": false,
+			"bVirtualParentFireDirectChildEnterEvents": true,
 			"Text": "Could you change your color? {test}",
 			"TextArguments": [
 				{
@@ -296,6 +327,7 @@
 					"NameValue": "None",
 					"bBoolValue": true,
 					"bLongTermMemory": true,
+					"GUID": "00000000000000000000000000000000",
 					"CustomCondition": null
 				}
 			],
@@ -326,6 +358,7 @@
 					"CustomEvent": null
 				}
 			],
+			"NodeGUID": "35B4256E4DAA4A9B167A89B4A09E304A",
 			"Children": [
 				{
 					"TargetIndex": 5,
@@ -344,6 +377,7 @@
 			"bCheckChildrenOnEvaluation": false,
 			"EnterConditions": [],
 			"EnterEvents": [],
+			"NodeGUID": "72C4AB014885A64698E3CC861AB71253",
 			"Children": []
 		},
 		{
@@ -354,6 +388,7 @@
 			"bCheckChildrenOnEvaluation": true,
 			"EnterConditions": [],
 			"EnterEvents": [],
+			"NodeGUID": "29AE2E6942746CC82D492AB2E4209F86",
 			"Children": [
 				{
 					"TargetIndex": 6,
@@ -372,6 +407,7 @@
 							"NameValue": "None",
 							"bBoolValue": true,
 							"bLongTermMemory": true,
+							"GUID": "00000000000000000000000000000000",
 							"CustomCondition": null
 						}
 					],
@@ -394,6 +430,7 @@
 			"__index__": 6,
 			"__type__": "DlgNode_Speech",
 			"bIsVirtualParent": false,
+			"bVirtualParentFireDirectChildEnterEvents": true,
 			"Text": "Sure. What color would you like to see?",
 			"TextArguments": [],
 			"SpeakerState": "Angry",
@@ -417,6 +454,7 @@
 					"CustomEvent": null
 				}
 			],
+			"NodeGUID": "196C3790459F04BF2203C19741D6D43B",
 			"Children": [
 				{
 					"TargetIndex": 8,
@@ -448,6 +486,7 @@
 			"__index__": 7,
 			"__type__": "DlgNode_Speech",
 			"bIsVirtualParent": false,
+			"bVirtualParentFireDirectChildEnterEvents": true,
 			"Text": "I can't keep changing my color all the time!\r\nJust leave me alone!",
 			"TextArguments": [],
 			"SpeakerState": "Happy",
@@ -459,6 +498,7 @@
 			"bCheckChildrenOnEvaluation": false,
 			"EnterConditions": [],
 			"EnterEvents": [],
+			"NodeGUID": "FE196CF646759068850EB9AC3B320CB4",
 			"Children": [
 				{
 					"TargetIndex": 11,
@@ -497,6 +537,7 @@
 					"CustomEvent": null
 				}
 			],
+			"NodeGUID": "3B90AB4C4C4820F914BE479C105E28E5",
 			"Children": []
 		},
 		{
@@ -518,6 +559,7 @@
 					"CustomEvent": null
 				}
 			],
+			"NodeGUID": "9FFA4F08461759F2D6088DB2A2F91DC7",
 			"Children": []
 		},
 		{
@@ -539,6 +581,7 @@
 					"CustomEvent": null
 				}
 			],
+			"NodeGUID": "1140288B4B6346B20EE0DA9E5E4F96CE",
 			"Children": []
 		},
 		{
@@ -548,12 +591,14 @@
 			"bCheckChildrenOnEvaluation": false,
 			"EnterConditions": [],
 			"EnterEvents": [],
+			"NodeGUID": "5E9BC9CC46F036FF5130B39F4F56BF84",
 			"Children": []
 		},
 		{
 			"__index__": 12,
 			"__type__": "DlgNode_Speech",
 			"bIsVirtualParent": false,
+			"bVirtualParentFireDirectChildEnterEvents": true,
 			"Text": "",
 			"TextArguments": [],
 			"SpeakerState": "None",
@@ -565,7 +610,62 @@
 			"bCheckChildrenOnEvaluation": false,
 			"EnterConditions": [],
 			"EnterEvents": [],
+			"NodeGUID": "45F5D8A94077B555C5FAB9A6FA601F79",
+			"Children": []
+		},
+		{
+			"__index__": 13,
+			"__type__": "DlgNode_Speech",
+			"bIsVirtualParent": true,
+			"bVirtualParentFireDirectChildEnterEvents": true,
+			"Text": "Good to see you again!",
+			"TextArguments": [],
+			"SpeakerState": "None",
+			"NodeData": null,
+			"VoiceSoundWave": "",
+			"VoiceDialogueWave": "",
+			"GenericData": "",
+			"OwnerName": "MrCube",
+			"bCheckChildrenOnEvaluation": false,
+			"EnterConditions": [
+				{
+					"Strength": "EDlgConditionStrength::Strong",
+					"ConditionType": "EDlgConditionType::HasSatisfiedChild",
+					"ParticipantName": "None",
+					"CallbackName": "None",
+					"Operation": "EDlgOperation::Equal",
+					"CompareType": "EDlgCompare::ToConst",
+					"OtherParticipantName": "None",
+					"OtherVariableName": "None",
+					"IntValue": 7,
+					"FloatValue": 0,
+					"NameValue": "None",
+					"bBoolValue": true,
+					"bLongTermMemory": true,
+					"GUID": "FE196CF646759068850EB9AC3B320CB4",
+					"CustomCondition": null
+				}
+			],
+			"EnterEvents": [],
+			"NodeGUID": "7EB261E54F00A7F1474E8182BBABC133",
 			"Children": []
 		}
-	]
+	],
+	"NodesGUIDToIndexMap":
+	{
+		"28422C254448BF2DF6676C89AD892D76": 0,
+		"2F4D3ED343B4C6FDA24A44A8CE1DC1A9": 1,
+		"408AD298458025C5D54C91993652AE68": 2,
+		"35B4256E4DAA4A9B167A89B4A09E304A": 3,
+		"72C4AB014885A64698E3CC861AB71253": 4,
+		"29AE2E6942746CC82D492AB2E4209F86": 5,
+		"196C3790459F04BF2203C19741D6D43B": 6,
+		"FE196CF646759068850EB9AC3B320CB4": 7,
+		"3B90AB4C4C4820F914BE479C105E28E5": 8,
+		"9FFA4F08461759F2D6088DB2A2F91DC7": 9,
+		"1140288B4B6346B20EE0DA9E5E4F96CE": 10,
+		"5E9BC9CC46F036FF5130B39F4F56BF84": 11,
+		"45F5D8A94077B555C5FAB9A6FA601F79": 12,
+		"7EB261E54F00A7F1474E8182BBABC133": 13
+	}
 }
